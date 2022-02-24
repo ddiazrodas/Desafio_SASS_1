@@ -1,0 +1,92 @@
+.img-bg-main {
+  width: 100%;
+  height: 100%;
+}
+
+.img-cartas-mendoza {
+  height: 400px;
+  width: 100%;
+}
+
+.img-carousel-bsas {
+  width: 100%;
+  height: 760px;
+}
+
+//--------------------------------------------FOOTER------------------------------------
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+
+  h6 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: block;
+  }
+
+  a {
+    color: #818181;
+  }
+
+  a:active,
+  a:focus,
+  a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+
+  .img-carousel-bsas {
+    width: 100%;
+    height: 460px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+}
+
+.img-bg-main {
+  width: 100%;
+  height: 100%;
+}
+
+.img-cartas-mendoza {
+  height: 400px;
+  width: 100%;
+}
+
+.img-carousel-bsas {
+  width: 100%;
+  height: 760px;
+}
