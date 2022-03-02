@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css y scss/styles.css">`
+    <link rel="stylesheet" href="animate.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="index.html">
+                <img src="./img/logo_small.png" alt="Logo del sitio, que dice 'Mi Destino'" width="130" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-5">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="covid.html">Covid</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="top.html">Top + Visitados</a>
+                    </li>
+                    <li class="nav-item dropdown pe-5">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lugares
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="destinos.html">Destinos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="mendoza.html">Mendoza</a></li>
+                            <li><a class="dropdown-item" href="neuquen.html">Neuquén</a></li>
+                            <li><a class="dropdown-item" href="misiones.html">Misiones</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="aboutUs.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="display-2 text-center my-5">Lugares para visitar en Argentina</h1>
+        <div class="video-container">
+            <div class="video-foreground">
+                <iframe class="height"
+                    src="https://www.youtube.com/embed/bu-XsOIzbsA?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playsinline=1&playlist=bu-XsOIzbsA&mute=1"
+                    title="YouTube video player" frameborder="0" allowfullscreen
+                    alt="Video que muestra lugares turisticos de Argentina, sin sonido"></iframe>
+                <!--los videos quiero que sean sin sonido-->
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+
+
+        <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" -->
+
+        <hr class="my-5">
+
+        <div id="carouselExampleCaptions" class="carousel slide carousel-centrado" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner just">
+                <div class="carousel-item active just">
+                    <img src="https://www.losandes.com.ar/resizer/T63uL8Kp_oJEIXwmHt3a-toceK4=/1023x682/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/7CEQITORVRH2FF6IMKE7FECCY4.jpg"
+                        class="d-block height-carousel"
+                        alt="Una imagen de Mendoza, mostrando un paisaje con una laguna y la cordillera de fondo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mendoza</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/desembocadura-Ruca-Malen-Parque-Nacional-Nahuel-Huapi-960x657.jpg"
+                        class="d-block height-carousel"
+                        alt="Una imagen del Parque Nacional Nahuel Huapi, Neuquen, un paisaje de la laguna y los bosques">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Neuquen</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.cronista.com/files/image/352/352344/61251b22add52.jpg"
+                        class="d-block height-carousel"
+                        alt="Imagen nocturna de la ciudad de Puerto Madero, Buenos Aires, mostrando la iluminación">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Buenos Aires</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev ms-2" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next me-2" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <hr class="my-5">
+
+        <section>
+            <div class="row justify-content-around">
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+                    <img class="imagenes-grid m-auto rounded" src="./img/Embalse-de-Potrerillos.jpg"
+                        alt="Imagen de Potrerillos, hombre de espalda sacando foto del paisaje de la cordillera y una laguna">
+                    <h6 class="text-center pt-2">@Potrerillos</h6>
+                    <div class="pt-4">
+                        <img class="imagenes-grid m-auto rounded" src="./img/San-Martín-de-los-Andes-Argentina.jpg"
+                            alt="Imagen en San Martin de los Andes, mostrando lo que parece ser un hotel hecho de madera cerca de un rio y bosque de pinos, con paisaje de fondo la cordillera">
+                        <h6 class="text-center pt-2">@San Martin de los Andes</h6>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+                    <img class="imagenes-grid m-auto rounded" src="./img/garganta del diablo.jpg"
+                        alt="Imagen mostrando desde arriba la desenbocadura del rio Iguazú, en la llamada Garganta del Diablo">
+                    <h6 class="text-center pt-2">@Garganta del Diablo</h6>
+                    <div class="pt-4">
+                        <img class="imagenes-grid m-auto rounded"
+                            src="./img/San-Martín-de-los-Andes-Chapelco-beto-Delloro-20189.jpg"
+                            alt="Imagen de Chapelco, localidad de Neuquen, ubicada en la cordillera de los Andes, paiseje de nieve con bosque">
+                        <h6 class="text-center pt-2">@Chapelco, San Martin de los Andes</h6>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+                    <img class="imagenes-grid m-auto rounded"
+                        src="./img/SanMartinA_verano2015_velero-lacar_efraindavila.com_.jpg"
+                        alt="Imagen de un rio/laguna ubicada en San Martin de los Andes, paisaje de un velero con montañas de fondo">
+                    <h6 class="text-center pt-2">@San Martin de los Andes</h6>
+                    <div class="pt-4">
+                        <img class="imagenes-grid m-auto rounded" src="./img/villa la angostura.jpg"
+                            alt="Imagen de Hotel con muelles, desemboca en una laguna, ubicado en Villa la Angostura, con paisaje de bosque detras">
+                        <h6 class="text-center pt-2">@Villa la Angostura</h6>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+                    <p class="text-start"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi vitae, libero dicta soluta corporis laudantium nesciunt sint, quis iste ut dignissimos?
+                        Totam,
+                        officia? Laudantium fugiat, corporis porro tempora repellendus. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Nam adipisci ipsum voluptas perferendis nisi. Aliquid, cumque
+                        fugiat perferendis fugit soluta quia aliquam dolorum, mollitia ipsa facilis commodi id explicabo
+                        voluptate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam officia nostrum aut
+                        pariatur assumenda, ratione eveniet rem, vero nobis voluptatibus reiciendis suscipit ducimus
+                        harum porro consectetur asperiores, sit accusantium qui. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Sapiente et error, ab eos nostrum alias repellat consectetur perspiciatis
+                        asperiores amet velit qui dolore modi eaque odit excepturi nobis tenetur reiciendis?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6 class="text-uppercase">About Us</h6>
+                    <p class="text-start">Este sitio fue creado con la idea de que las personas que quieran
+                        conocer nuevos destinos en Argentina, tengan la facilidad de acceder a
+                        Mi Destino, para recibir una orientacion turisca sobre su viaje
+                        alrededor del pais. Tendran una breve descripcion de cada lugar y una
+                        recomendación, no solo hecha por nosotros, sino por aquellas personas
+                        que hayan viajado, puedan dejar su comentario del lugar. Actualmente
+                        tenemos solo tenemos a disposición destinos de Argentina, nuestro
+                        objetivo es avanzar e ir incorporando nuevos paises. ¿Cuales te
+                        gustarian? Dejanos tu comentario. Gracias por visitarnos.</p>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Escriba su comentario aquí..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">Enviar Comentario</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-3 ps-5">
+                    <h6 class="text-uppercase">Categories</h6>
+
+                    <!-- en categorias voy a poner las provincias -->
+
+                    <ul class="footer-links">
+                        <li><a href="#">xxxxxxx</a></li>
+                        <li><a href="#">xxxxxxx</a></li>
+                        <li><a href="#">xxxxxxx</a></li>
+                        <li><a href="#">xxxxxxx</a></li>
+                        <li><a href="#">xxxxxxx</a></li>
+                        <li><a href="#">xxxxxxx</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6 class="text-uppercase">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="#">+54 11-31264581</a></li>
+                        <li><a href="destinos.html">Lugares</a></li>
+                        <li><a href="top.html">Lo mas visitado</a></li>
+                        <li><a href="covid.html">Covid</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

@@ -1,3 +1,69 @@
+.video-container {
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & {
+      pointer-events: none;
+    }
+
+    & {
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 120px);
+    }
+  }
+}
+
+.video-foreground {
+  pointer-events: none;
+}
+
+.height {
+  height: 400px;
+  width: 100%;
+}
+
+.height-carousel {
+  height: 600px;
+  width: 1200px;
+  margin-left: 1rem;
+}
+
+.carousel-centrado {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.imagenes-grid {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  transition: 0.7s;
+}
+
+.imagenes-grid:hover {
+  transform: scale(1.1);
+}
+
+p {
+  line-height: 24px;
+
+  //esto quizas pueda hacerlo variable global
+
+}
+
+//--------------------------------------------Destinos------------------------------------
+
 .img-bg-main {
   width: 100%;
   height: 100%;
@@ -11,6 +77,23 @@
 .img-carousel-bsas {
   width: 100%;
   height: 760px;
+}
+
+//--------------------------------------------Covid------------------------------------
+
+.tamaño-letra {
+  font-size: 20px;
+}
+
+.img-links-covid {
+  display: flex;
+  height: 300px;
+}
+
+//--------------------------------------------Top------------------------------------
+
+.img-carousel-bariloche {
+  height: 350px;
 }
 
 //--------------------------------------------FOOTER------------------------------------
@@ -27,12 +110,6 @@
     font-size: 20px;
     margin-top: 5px;
   }
-
-  a:hover {
-    color: #3366cc;
-    text-decoration: none;
-  }
-
 }
 
 .footer-links {
@@ -44,13 +121,17 @@
   }
 
   a {
-    color: #818181;
+    color: #eeeeee;
+
+    &:hover {
+      color: red;
+    }
   }
 
   a:active,
   a:focus,
   a:hover {
-    color: #3366cc;
+    color: #d32828;
     text-decoration: none;
   }
 }
