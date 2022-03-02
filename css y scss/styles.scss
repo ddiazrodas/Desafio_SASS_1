@@ -1,3 +1,11 @@
+$estilos: ( 
+  tamanoFuente: 15px,
+  entreLineado: 24px,
+  //boostrap ya en si me permitió cambiar el tamaño de fuente de las letras, y el centrado, etc.
+);
+
+
+
 .video-container {
   width: 100%;
   height: 1000px;
@@ -55,11 +63,11 @@
   transform: scale(1.1);
 }
 
-p {
-  line-height: 24px;
+.tfuente {
+  line-height: map-get($estilos , entreLineado);
+  font-size: map-get($estilos , tamanoFuente);
 
-  //esto quizas pueda hacerlo variable global
-
+//esto quizas pueda hacerlo variable global o dentro de un map, y usar un map get para los estilos de texto de todas las pages
 }
 
 //--------------------------------------------Destinos------------------------------------
@@ -82,7 +90,7 @@ p {
 //--------------------------------------------Covid------------------------------------
 
 .tamaño-letra {
-  font-size: 20px;
+  font-size: map-get($estilos , tamanoFuente); //posite hacerlo con un map, map-get
 }
 
 .img-links-covid {
@@ -101,8 +109,8 @@ p {
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: map-get($estilos , $tamanoFuente);
+  line-height: map-get($estilos , entreLineado);
   color: #737373;
 
   h6 {
