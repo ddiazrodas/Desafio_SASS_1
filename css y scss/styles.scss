@@ -123,11 +123,13 @@ $estilos: (
 //--------------------------------------------FOOTER------------------------------------
 
 .site-footer {
-  background-color: #26272b; //este color de fondo no lo hago con map, porque solo lo uso en el footer, y se replica en todas las page
+  background-color: #26272b; 
+  //este color de fondo no lo hago con map, porque solo lo uso en el footer, y se replica en todas las page
   padding: 45px 0 20px;
   font-size: map-get($estilos, tamanoFuente);
   line-height: map-get($estilos, entreLineado);
-  color: #737373; //no lo hago con map, mismo motivo que el color de fondo, si fuera a utilizarlo en otras partes si
+  color: #737373; 
+  //no lo hago con map, mismo motivo que el color de fondo, si fuera a utilizarlo en otras partes si
 
   h6 {
     color: #fff;
