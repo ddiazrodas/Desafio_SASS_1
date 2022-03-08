@@ -13,14 +13,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css y scss/styles.css">`
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="animate/animate.min.css">
     <title>Comienza a conocer los lugares para visitar en Argentina</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="index.html">
+            <a class="navbar-brand ms-5" href="./index.html">
                 <img src="./img/logo_small.png" alt="Logo del sitio, que dice 'Mi Destino'" width="130" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-#navbarSupportedContent"
@@ -33,10 +33,10 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item pe-5">
-                        <a class="nav-link" href="covid.html">Covid</a>
+                        <a class="nav-link" href="pages/covid.html">Covid</a>
                     </li>
                     <li class="nav-item pe-5">
-                        <a class="nav-link" href="top.html">Top + Visitados</a>
+                        <a class="nav-link" href="pages/top.html">Top + Visitados</a>
                     </li>
                     <li class="nav-item dropdown pe-5">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -44,25 +44,27 @@
                             Lugares
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="destinos.html">Destinos</a></li>
+                            <li><a class="dropdown-item" href="pages/destinos.html">Destinos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="mendoza.html">Mendoza</a></li>
-                            <li><a class="dropdown-item" href="neuquen.html">Neuquén</a></li>
-                            <li><a class="dropdown-item" href="misiones.html">Misiones</a></li>
+                            <li><a class="dropdown-item" href="pages/pages_destinos/mendoza.html">Mendoza</a></li>
+                            <li><a class="dropdown-item" href="pages/pages_destinos/neuquen.html">Neuquén</a></li>
+                            <li><a class="dropdown-item" href="pages/pages_destinos/misiones.html">Misiones</a></li>
                         </ul>
                     </li>
                     <li class="nav-item pe-5">
-                        <a class="nav-link" href="aboutUs.html">Sobre nosotros</a>
+                        <a class="nav-link" href="pages/aboutUs.html">Sobre nosotros</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header><h1 class="display-2 text-center my-5">Mi destino... Argentina</h1></header> <!-- encabezado -->
+    <header>
+        <h1 class="wow animate__animated animate__fadeInUp display-2 text-center my-5">Mi destino... Argentina</h1>
+    </header> <!-- encabezado -->
     <main>
-        
+
         <div class="video-container">
             <div class="video-foreground">
                 <iframe class="height"
@@ -136,9 +138,13 @@
         <section>
             <div class="row justify-content-around">
                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
-                    <img class="imagenes-grid m-auto rounded" src="./img/Embalse-de-Potrerillos.jpg"
-                        alt="Imagen de Potrerillos, hombre de espalda sacando foto del paisaje de la cordillera y una laguna">
-                    <h6 class="text-center pt-2">@Potrerillos</h6>
+                    <div class="prueba2">
+                        <img class="imagenes-grid m-auto rounded" src="./img/Embalse-de-Potrerillos.jpg"
+                            alt="Imagen de Potrerillos, hombre de espalda sacando foto del paisaje de la cordillera y una laguna">
+                        <span class="prueba wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+                            reprehenderit!</span>
+                        <h6 class="wow animate__animated animate__fadeInUp text-center pt-2">@Potrerillos</h6>
+                    </div>
                     <div class="pt-4">
                         <img class="imagenes-grid m-auto rounded" src="./img/San-Martín-de-los-Andes-Argentina.jpg"
                             alt="Imagen en San Martin de los Andes, mostrando lo que parece ser un hotel hecho de madera cerca de un rio y bosque de pinos, con paisaje de fondo la cordillera">
@@ -248,7 +254,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="animate/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>

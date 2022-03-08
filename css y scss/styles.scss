@@ -19,7 +19,7 @@ $estilos: (
     top: 0;
     left: 0;
     @include sizes(100%, 100%);
-    
+
     & {
       pointer-events: none;
     }
@@ -51,6 +51,10 @@ $estilos: (
   margin: 2rem auto;
 }
 
+.prueba2 {
+  position: relative;
+}
+
 .imagenes-grid {
   @include sizes(300px, 200px);
   display: flex;
@@ -59,6 +63,24 @@ $estilos: (
 
 .imagenes-grid:hover {
   transform: scale(1.1);
+  opacity: 0.2;
+  // display: none;
+}
+
+.prueba {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+
+  // &:hover {
+  //   display: block;
+  //   position: absolute;
+  // }
+}
+
+.imagenes-grid:hover + .prueba {
+  display: block;
 }
 
 .tfuente {
@@ -123,12 +145,12 @@ $estilos: (
 //--------------------------------------------FOOTER------------------------------------
 
 .site-footer {
-  background-color: #26272b; 
+  background-color: #26272b;
   //este color de fondo no lo hago con map, porque solo lo uso en el footer, y se replica en todas las page
   padding: 45px 0 20px;
   font-size: map-get($estilos, tamanoFuente);
   line-height: map-get($estilos, entreLineado);
-  color: #737373; 
+  color: #737373;
   //no lo hago con map, mismo motivo que el color de fondo, si fuera a utilizarlo en otras partes si
 
   h6 {
@@ -170,10 +192,6 @@ $estilos: (
   .site-footer [class^="col-"] {
     margin-bottom: 30px;
   }
-
-  .img-carousel-bsas {
-    @include sizes(100%, 460px);
-  }
 }
 
 @media (max-width: 767px) {
@@ -182,15 +200,66 @@ $estilos: (
   }
 }
 
-.img-bg-main {
-  width: 100%;
-  height: 100%;
+@media (min-width: 0px) and (max-width: 378.98px) {
+  .img-carousel-bsas {
+    @include sizes(100%, 200px);
+  }
+
+  .img-cartas-mendoza {
+    @include sizes(100%, 200px);
+  }
 }
 
-.img-cartas-mendoza {
-  @include sizes(100%, 400px);
+@media (min-width: 380px) and (max-width: 575.98px) {
+  .img-carousel-bsas {
+    @include sizes(100%, 250px);
+  }
+
+  .img-cartas-mendoza {
+    @include sizes(100%, 260px);
+  }
 }
 
-.img-carousel-bsas {
-  @include sizes(100%, 760px);
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .img-carousel-bsas {
+    @include sizes(100%, 350px);
+  }
+
+  .img-cartas-mendoza {
+    @include sizes(100%, 350px);
+  }
 }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .img-carousel-bsas {
+    @include sizes(100%, 400px);
+  }
+
+  .img-cartas-mendoza {
+    @include sizes(100%, 400px);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .img-carousel-bsas {
+    @include sizes(100%, 550px);
+  }
+}
+
+// `xs` returns only a ruleset and no media query
+// ... { ... }
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+//@media (max-width: 575.98px) {}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+//@media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+//@media (max-width: 991.98px) {}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+//@media (max-width: 1199.98px) {}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+//@media (max-width: 1399.98px) { }

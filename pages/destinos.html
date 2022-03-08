@@ -12,15 +12,15 @@
         content="turismo, Argentina, viajar, Mendoza, Neuquen, Misiones, gastronomia, visitar, destino">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css y scss/styles.css">
+    <link rel="stylesheet" href="../css y scss/styles.css">
     <title>Aquí tendras una breve descripción de los increibles lugares de las provincias Argentinas</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="index.html" target="">
-                <img src="./img/logo_small.png" alt="Logo del sitio, que dice 'Mi Destino'" width="130" height="30">
+            <a class="navbar-brand ms-5" href="../index.html" target="">
+                <img src="../img/logo_small.png" alt="Logo del sitio, que dice 'Mi Destino'" width="130" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item pe-5">
-                        <a class="nav-link active" aria-current="page" href="index.html" target="">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html" target="">Home</a>
                     </li>
                     <li class="nav-item pe-5">
                         <a class="nav-link" href="covid.html" target="">Covid</a>
@@ -44,13 +44,13 @@
                             Lugares
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="destinos.html">Destinos</a></li>
+                            <li><a class="dropdown-item" href="/pages/destinos.html">Destinos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="mendoza.html">Mendoza</a></li>
-                            <li><a class="dropdown-item" href="neuquen.html">Neuquén</a></li>
-                            <li><a class="dropdown-item" href="misiones.html">Misiones</a></li>
+                            <li><a class="dropdown-item" href="./pages_destinos/mendoza.html">Mendoza</a></li>
+                            <li><a class="dropdown-item" href="./pages_destinos/neuquen.html">Neuquén</a></li>
+                            <li><a class="dropdown-item" href="./pages_destinos/misiones.html">Misiones</a></li>
                         </ul>
                     </li>
                     <li class="nav-item pe-5">
@@ -64,11 +64,11 @@
     <main>
         <div class="container-fluid">
             <div class="card bg-dark text-white">
-                <img class="img-bg-main" src="./img/2680370.jpg" class="card-img"
+                <img class="img-bg-main" src="../img/2680370.jpg" class="card-img"
                     alt="Imagen con paisaje del lago Naguel Huapi">
                 <div class="card-img-overlay d-flex flex-column justify-content-center">
-                                            <!--encabezado -->
-                     <h1 class="card-title display-1 text-center text-uppercase">Late a tu ritmo</h1>
+                    <!--encabezado -->
+                    <h1 class="card-title display-1 text-center text-uppercase">Late a tu ritmo</h1>
 
                     <p class="card-text fs-5 text-center">Aquí podrá conocer algunos de los mejores destinos de
                         Argentina</p>
@@ -82,18 +82,27 @@
 
     <section>
         <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center mb-5">
-                <h2 class="display-4">Conociendo Mendoza . . . </h2>
-                <div>
-                    <a href="https://www.youtube.com/embed/61E1E8EZqm8?&mute=1" target=""
-                        alt="Boton con enlace a un video de Mendoza" class="btn btn-primary btn-SCSS1">Ver video aquí</a>
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 mb-5">
+                    <div>
+                        <h2 class="display-4">Conociendo Mendoza . . . </h2>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-3 col-md-12 col-sm-12 col-12 d-flex justify-content-end
+                    align-items-center mb-5">
+                    <div>
+                        <a href="https://www.youtube.com/embed/61E1E8EZqm8?&mute=1" target=""
+                            alt="Boton con enlace a un video de Mendoza"
+                            class="btn btn-primary btn-SCSS1 d-flex justify-content-end align-items-center">Ver video
+                            aquí</a>
+                    </div>
                 </div>
             </div>
+            <!-- justify-content-between align-items-center -->
             <div class="card border-info border-2 mb-3" style="max-width: 100%">
                 <div class="row g-0">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <img src="./img/Blog-Valle-de-Uco.jpg" class="img-fluid rounded-start img-cartas-mendoza"
+                        <img src="../img/Blog-Valle-de-Uco.jpg" class="img-fluid rounded-start img-cartas-mendoza"
                             alt="Viñedos del Valle de Uco, con paisaje de la cordillera de fondo">
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -138,7 +147,7 @@
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <img src="./img/Hotel-y-Reserva-Villavicencio.jpg"
+                        <img src="../img/Hotel-y-Reserva-Villavicencio.jpg"
                             class="img-fluid rounded-start img-cartas-mendoza"
                             alt="Hotel de la Reserva Villavicencio rodeado de bosques">
                     </div>
@@ -148,7 +157,7 @@
             <div class="card border-primary mb-3 border-2" style="max-width: 100%">
                 <div class="row g-0">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <img src="./img/las-lenas.jpg" class="img-fluid rounded-start img-cartas-mendoza"
+                        <img src="../img/las-lenas.jpg" class="img-fluid rounded-start img-cartas-mendoza"
                             alt="Imagen noctura de las Leñas en invierno, Mendoza, mostrando el camino para hacer sky/snowboard, y los hoteles todos iluminados">
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -177,17 +186,28 @@
 
     <section>
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-5">
-                <div>
-                    <a href="https://www.youtube.com/embed/CQDtI7DrU7o?&mute=1" target="" class="btn btn-primary btn-SCSS2">Ver
-                        video aquí</a>
+
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 mb-5">
+                    <div>
+                        <h2 class="display-4">. . . Conociendo Neuquen . . . </h2>
+                    </div>
                 </div>
-                <h2 class="display-4">. . . Conociendo Neuquen . . . </h2>
+                <div class="col-xxl-4 col-xl-4 col-lg-3 col-md-12 col-sm-12 col-12 d-flex justify-content-end
+                    align-items-center mb-5">
+                    <div>
+                        <a href="https://www.youtube.com/embed/CQDtI7DrU7o?&mute=1" target=""
+                            alt="Boton con enlace a un video de Neuquen"
+                            class="btn btn-primary btn-SCSS2 d-flex justify-content-end align-items-center">Ver video
+                            aquí</a>
+                    </div>
+                </div>
             </div>
+
             <div class="card border-info border-2 mb-3" style="max-width: 100%">
                 <div class="row g-0">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <img src="./img/San-Martín-de-los-Andes-Argentina.jpg"
+                        <img src="../img/San-Martín-de-los-Andes-Argentina.jpg"
                             class="img-fluid rounded-start img-cartas-mendoza"
                             alt="Imagen en San Martin de los Andes, mostrando lo que parece ser un hotel hecho de madera cerca de un rio y bosque de pinos, con paisaje de fondo la cordillera">
                     </div>
@@ -233,7 +253,7 @@
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <img src="./img/villa la angostura.jpg" class="img-fluid rounded-start img-cartas-mendoza"
+                        <img src="../img/villa la angostura.jpg" class="img-fluid rounded-start img-cartas-mendoza"
                             alt="Imagen de Hotel con muelles, desemboca en una laguna, ubicado en Villa la Angostura, con paisaje de bosque detras">
                     </div>
                 </div>
@@ -242,7 +262,7 @@
             <div class="card border-primary mb-3 border-2" style="max-width: 100%">
                 <div class="row g-0">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <img src="./img/Alumine_rafting_2015_efraindavila.com-21-960x643.jpg"
+                        <img src="../img/Alumine_rafting_2015_efraindavila.com-21-960x643.jpg"
                             class="img-fluid rounded-start img-cartas-mendoza"
                             alt="Imagen de personas haciendo la actividad rafting, en los rios de la Ruta del Pehuén">
                     </div>
@@ -266,41 +286,49 @@
                     </div>
                 </div>
             </div>
+            
 
-            <div class="d-flex justify-content-between align-items-center my-5">
-                <div>
-                    <a href="https://www.youtube.com/embed/-w1ybwh5gws?&mute=1" target=""
-                        alt="Botón con enlace a un video de Buenos Aires" class="btn btn-primary btn-SCSS3">Ver
-                        video aquí</a>
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 mb-5">
+                    <div>
+                        <h2 class="display-4">. . . y un poco de Buenos Aires. </h2>
+                    </div>
                 </div>
-                <h2 class="display-4">. . . y un poco de Buenos Aires. </h2>
-            </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-3 col-md-12 col-sm-12 col-12 d-flex justify-content-end
+                    align-items-center mb-5">
+                    <div>
+                        <a href="https://www.youtube.com/embed/-w1ybwh5gws?&mute=1" target=""
+                            alt="Botón con enlace a un video de Buenos Aires"
+                            class="btn btn-primary btn-SCSS3 d-flex justify-content-end align-items-center">Ver video
+                            aquí</a>
+                    </div>
+                </div>
 
             <div id="carouselExampleFade" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/bsas/obelisco noche.jpg" class="d-block img-carousel-bsas"
+                        <img src="../img/bsas/obelisco noche.jpg" class="img-carousel-bsas d-block"
                             alt="Foto del obelisco de buenos aires sacada de noche, mostrando un poco de los edificios de las Avenidas 9 de Julio y Corrientes">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/bsas/galeria pacifico bsas.jpg" class="d-block img-carousel-bsas"
+                        <img src="../img/bsas/galeria pacifico bsas.jpg" class="img-carousel-bsas d-block"
                             alt="Foto de la entrada al centro comercial Galerias Pacifico a la atardecer, ubicado sobre Av Cordoba, pleno centro de capital de Buenos Aires">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/bsas/visita-jardin-japones-buenos-aires-2021-32-min.jpg"
-                            class="d-block img-carousel-bsas"
+                        <img src="../img/bsas/visita-jardin-japones-buenos-aires-2021-32-min.jpg"
+                            class="img-carousel-bsas d-block"
                             alt="Imagen del jardin Japones, paisaje de flores de color rosa, lagos pequeños, arboles, y estructuras japonesas">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/bsas/planetario noche 3.jpg" class="d-block img-carousel-bsas"
+                        <img src="../img/bsas/planetario noche 3.jpg" class="img-carousel-bsas d-block"
                             alt="Foto del planetario de buenos aires, sacada de noche, mostrando la iluminacion azul, y el reflejo en el agua del pequeño lago que lo rodea">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/bsas/puente de la mujer.jpg" class="d-block img-carousel-bsas"
+                        <img src="../img/bsas/puente de la mujer.jpg" class="img-carousel-bsas d-block"
                             alt="Imagen de Puerto Madero de dia, mostrando el puente de la mujer, y las edificaciones de fondo">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/bsas/MardelPlata lobo marino.jpg" class="d-block img-carousel-bsas"
+                        <img src="../img/bsas/MardelPlata lobo marino.jpg" class="img-carousel-bsas d-block"
                             alt="Imagen de lo que parecen ser dos adolescentes sacandose una 'selfi' junto a la estatua del lobo marino con el paisaje del mar">
                     </div>
                 </div>
