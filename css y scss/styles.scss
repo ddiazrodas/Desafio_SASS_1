@@ -208,6 +208,9 @@ $estilos: (
   .img-cartas-mendoza {
     @include sizes(100%, 200px);
   }
+  .img-carousel-bariloche {
+    @include sizes(100%, 200px);
+  }
 }
 
 @media (min-width: 380px) and (max-width: 575.98px) {
@@ -216,6 +219,10 @@ $estilos: (
   }
 
   .img-cartas-mendoza {
+    @include sizes(100%, 260px);
+  }
+
+  .img-carousel-bariloche {
     @include sizes(100%, 260px);
   }
 }
@@ -228,6 +235,10 @@ $estilos: (
   .img-cartas-mendoza {
     @include sizes(100%, 350px);
   }
+
+  .img-carousel-bariloche {
+    @include sizes(100%, 350px);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -238,11 +249,26 @@ $estilos: (
   .img-cartas-mendoza {
     @include sizes(100%, 400px);
   }
+
+  .img-carousel-bariloche {
+    @include sizes(100%, 400px);
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .img-carousel-bsas {
     @include sizes(100%, 550px);
+  }
+
+  .img-carousel-bariloche {
+    @include sizes(100%, 560px);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .img-carousel-bariloche {
+    @include sizes(100%, 660px);
   }
 }
 

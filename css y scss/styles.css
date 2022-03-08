@@ -190,6 +190,10 @@
     width: 100%;
     height: 200px;
   }
+  .img-carousel-bariloche {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 @media (min-width: 380px) and (max-width: 575.98px) {
@@ -198,6 +202,10 @@
     height: 250px;
   }
   .img-cartas-mendoza {
+    width: 100%;
+    height: 260px;
+  }
+  .img-carousel-bariloche {
     width: 100%;
     height: 260px;
   }
@@ -212,6 +220,10 @@
     width: 100%;
     height: 350px;
   }
+  .img-carousel-bariloche {
+    width: 100%;
+    height: 350px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -223,12 +235,27 @@
     width: 100%;
     height: 400px;
   }
+  .img-carousel-bariloche {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .img-carousel-bsas {
     width: 100%;
     height: 550px;
+  }
+  .img-carousel-bariloche {
+    width: 100%;
+    height: 560px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .img-carousel-bariloche {
+    width: 100%;
+    height: 660px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
