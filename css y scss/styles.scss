@@ -52,7 +52,7 @@ $estilos: (
 }
 
 .prueba2 {
-  position: relative;
+  position: relative; //esta es una clase para una animacion que estoy intentando hacer
 }
 
 .imagenes-grid {
@@ -67,7 +67,7 @@ $estilos: (
   // display: none;
 }
 
-.prueba {
+.prueba { //esta es una clase para una animacion que estoy intentando hacer
   position: absolute;
   top: 10px;
   left: 10px;
@@ -79,7 +79,7 @@ $estilos: (
   // }
 }
 
-.imagenes-grid:hover + .prueba {
+.imagenes-grid:hover + .prueba { //esta es una clase para una animacion que estoy intentando hacer
   display: block;
 }
 
@@ -120,6 +120,7 @@ $estilos: (
 
 .img-carousel-bsas {
   @include sizes(100%, 760px);
+  border-radius: 40px;
 }
 
 //--------------------------------------------Covid------------------------------------
@@ -211,6 +212,11 @@ $estilos: (
   .img-carousel-bariloche {
     @include sizes(100%, 200px);
   }
+
+  .height-carousel {
+    @include sizes(100%, 200px);
+    margin-left: 1rem;
+  }
 }
 
 @media (min-width: 380px) and (max-width: 575.98px) {
@@ -225,6 +231,11 @@ $estilos: (
   .img-carousel-bariloche {
     @include sizes(100%, 260px);
   }
+
+  .height-carousel {
+    @include sizes(100%, 260px);
+    margin-left: 1rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -238,6 +249,11 @@ $estilos: (
 
   .img-carousel-bariloche {
     @include sizes(100%, 350px);
+  }
+
+  .height-carousel {
+    @include sizes(100%, 350px);
+    margin-left: 1rem;
   }
 }
 
@@ -254,6 +270,11 @@ $estilos: (
     @include sizes(100%, 400px);
   }
 
+  .height-carousel {
+    @include sizes(100%, 460px);
+    margin-left: 1rem;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -264,11 +285,21 @@ $estilos: (
   .img-carousel-bariloche {
     @include sizes(100%, 560px);
   }
+
+  .height-carousel {
+    @include sizes(100%, 600px);
+    margin-left: 1rem;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .img-carousel-bariloche {
     @include sizes(100%, 660px);
+  }
+
+  .height-carousel {
+    @include sizes(100%, 600px);
+    margin-left: 1rem;
   }
 }
 
