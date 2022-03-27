@@ -37,9 +37,9 @@ $estilos: (
   pointer-events: none;
 }
 
-.height {
-  @include sizes(100%, 400px);
-}
+// .height {
+//   @include sizes(100%, 400px);
+// }
 
 .height-carousel {
   @include sizes(1200px, 600px);
@@ -202,6 +202,11 @@ $estilos: (
 }
 
 @media (min-width: 0px) and (max-width: 378.98px) {
+  
+  .video-container {
+    display: none;
+  }
+
   .img-carousel-bsas {
     @include sizes(100%, 200px);
   }
@@ -220,6 +225,11 @@ $estilos: (
 }
 
 @media (min-width: 380px) and (max-width: 575.98px) {
+  
+  .video-container {
+    display: none;
+  }
+
   .img-carousel-bsas {
     @include sizes(100%, 250px);
   }
@@ -239,6 +249,11 @@ $estilos: (
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  
+  .video-container {
+    @include sizes(100%, 320px);
+  }
+
   .img-carousel-bsas {
     @include sizes(100%, 350px);
   }
@@ -258,6 +273,11 @@ $estilos: (
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  
+  .video-container {
+    @include sizes(100%, 400px);
+  }
+
   .img-carousel-bsas {
     @include sizes(100%, 400px);
   }
@@ -278,6 +298,11 @@ $estilos: (
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  
+  .video-container {
+    @include sizes(100%, 500px);
+  }
+
   .img-carousel-bsas {
     @include sizes(100%, 550px);
   }
@@ -293,6 +318,11 @@ $estilos: (
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+  .video-container {
+    @include sizes(100%, 600px);
+  }
+
   .img-carousel-bariloche {
     @include sizes(100%, 660px);
   }
