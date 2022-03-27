@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 $estilos: (
   tamanoFuente: 15px,
-  entreLineado: 24px,
+  entreLineado: 25px,
   //boostrap ya en si me permitió cambiar el tamaño de fuente de las letras, y el centrado, etc.
 );
 
@@ -47,6 +50,10 @@ $estilos: (
   margin: 2rem auto;
 }
 
+.img-fondo-prueba {
+  background-image: url("https://images.unsplash.com/photo-1606839963602-d86bc4b1d527?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+  background-size: cover;
+}
 
 .imagenes-grid {
   @include sizes(80%, 300px);
@@ -72,12 +79,12 @@ $estilos: (
 }
 
 .example:hover > * {
-  filter: blur(0) grayscale(0) drop-shadow(0 0 0.5rem black);
+  filter: blur(0) grayscale(0) drop-shadow(0 0 5rem black);
   transition: 0.7s;
 }
 
 .example {
-  padding: 1rem;
+  padding: 2.3rem;
   display: grid;
   gap: 1rem;
   grid-template-areas: "stack";
@@ -121,10 +128,19 @@ $estilos: (
 // }
 
 .tfuente {
-  line-height: map-get($estilos, entreLineado);
-  font-size: map-get($estilos, tamanoFuente);
+  font-family: 'Encode Sans', sans-serif, 'Calibri';
+  font-weight: 600;
+  font-size: 56.25px;  
+  color: white;
+  filter: drop-shadow(0 0 0.05rem rgb(0, 0, 0));
+}
 
-  //esto quizas pueda hacerlo variable global o dentro de un map, y usar un map get para los estilos de texto de todas las pages
+.tfuente2 {
+  font-family: 'Poiret One', cursive, sans-serif, 'Calibri';
+  font-weight: bold;
+  // line-height: map-get($estilos, entreLineado);  
+  color: white;
+  filter: drop-shadow(0 0 0.05rem rgb(0, 0, 0));
 }
 
 //--------------------------------------------Destinos------------------------------------
@@ -226,6 +242,10 @@ $estilos: (
   display: inline-block;
 }
 
+.logo {
+  @include sizes(20px, 20px);
+}
+
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
     margin-bottom: 30px;
@@ -244,11 +264,15 @@ $estilos: (
   }
 
   .imagenes-grid {
-    @include sizes(80%, 200px)
+    @include sizes(80%, 200px);
   }
 
   .interesting-title {
     font-size: 1.2rem;
+  }
+
+  .tfuente {
+    font-size: 20px;  
   }
 
   .img-carousel-bsas {
@@ -274,11 +298,15 @@ $estilos: (
   }
 
   .imagenes-grid {
-    @include sizes(80%, 300px)
+    @include sizes(80%, 300px);
   }
 
   .interesting-title {
     font-size: 1.5rem;
+  }
+
+  .tfuente {
+    font-size: 29px;  
   }
 
   .img-carousel-bsas {
@@ -305,11 +333,15 @@ $estilos: (
   }
 
   .imagenes-grid {
-    @include sizes(80%, 300px)
+    @include sizes(80%, 300px);
   }
 
   .interesting-title {
     font-size: 1.5rem;
+  }
+
+  .tfuente {
+    font-size: 35px;  
   }
 
   .img-carousel-bsas {
@@ -336,11 +368,15 @@ $estilos: (
   }
 
   .imagenes-grid {
-    @include sizes(80%, 200px)
+    @include sizes(80%, 200px);
   }
 
   .interesting-title {
     font-size: 1.2rem;
+  }
+
+  .tfuente {
+    font-size: 45px;  
   }
 
   .img-carousel-bsas {
@@ -362,18 +398,22 @@ $estilos: (
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
   .video-container {
     @include sizes(100%, 500px);
   }
 
   .imagenes-grid {
-    @include sizes(80%, 270px)
+    @include sizes(80%, 270px);
   }
 
   .interesting-title {
     font-size: 1.5rem;
   }
 
+  .tfuente {
+    font-size: 52.25px;  
+  }
 
   .img-carousel-bsas {
     @include sizes(100%, 550px);
@@ -395,7 +435,7 @@ $estilos: (
   }
 
   .imagenes-grid {
-    @include sizes(80%, 300px)
+    @include sizes(80%, 300px);
   }
 
   .img-carousel-bariloche {
