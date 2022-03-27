@@ -37,10 +37,6 @@ $estilos: (
   pointer-events: none;
 }
 
-// .height {
-//   @include sizes(100%, 400px);
-// }
-
 .height-carousel {
   @include sizes(1200px, 600px);
   margin-left: 1rem;
@@ -51,37 +47,78 @@ $estilos: (
   margin: 2rem auto;
 }
 
-.prueba2 {
-  position: relative; //esta es una clase para una animacion que estoy intentando hacer
-}
 
 .imagenes-grid {
-  @include sizes(300px, 200px);
-  display: flex;
+  @include sizes(80%, 300px);
+  // display: flex;
+}
+
+// .imagenes-grid:hover {
+//   transform: scale(1.1);
+//   box-shadow: 0 6px 16px rgb(0, 110, 255);
+//   // display: none;
+// }
+
+.interesting-title {
+  color: rgb(6, 255, 139);
+  padding: 0.125em 0.5em;
+}
+
+.example > * {
+  filter: drop-shadow(0 0 0.5rem black);
+  filter: blur(0.25rem) grayscale(1) drop-shadow(0 0 0.5rem black);
+  transition: filter 500ms;
+  // box-shadow: 0 0 1rem black;
+}
+
+.example:hover > * {
+  filter: blur(0) grayscale(0) drop-shadow(0 0 0.5rem black);
   transition: 0.7s;
 }
 
-.imagenes-grid:hover {
-  transform: scale(1.1);
-  opacity: 0.2;
-  // display: none;
+.example {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "stack";
 }
 
-.prueba { //esta es una clase para una animacion que estoy intentando hacer
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: none;
-
-  // &:hover {
-  //   display: block;
-  //   position: absolute;
-  // }
+.example > * {
+  grid-area: stack;
 }
 
-.imagenes-grid:hover + .prueba { //esta es una clase para una animacion que estoy intentando hacer
-  display: block;
+.interesting-title {
+  z-index: 99;
+  font-size: 2rem;
+  align-self: center;
+  justify-self: end;
 }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// .prueba {
+//   //esta es una clase para una animacion que estoy intentando hacer
+//   position: absolute;
+//   top: 10px;
+//   left: 10px;
+//   text-align: center;
+
+//   &:hover {
+//     display: none;
+//     position: absolute;
+//   }
+// }
+
+// .imagenes-grid:hover + .prueba {
+//   //esta es una clase para una animacion que estoy intentando hacer
+//   display: none;
+// }
 
 .tfuente {
   line-height: map-get($estilos, entreLineado);
@@ -202,9 +239,16 @@ $estilos: (
 }
 
 @media (min-width: 0px) and (max-width: 378.98px) {
-  
   .video-container {
     display: none;
+  }
+
+  .imagenes-grid {
+    @include sizes(80%, 200px)
+  }
+
+  .interesting-title {
+    font-size: 1.2rem;
   }
 
   .img-carousel-bsas {
@@ -225,9 +269,16 @@ $estilos: (
 }
 
 @media (min-width: 380px) and (max-width: 575.98px) {
-  
   .video-container {
     display: none;
+  }
+
+  .imagenes-grid {
+    @include sizes(80%, 300px)
+  }
+
+  .interesting-title {
+    font-size: 1.5rem;
   }
 
   .img-carousel-bsas {
@@ -243,15 +294,22 @@ $estilos: (
   }
 
   .height-carousel {
-    @include sizes(100%, 260px);
+    @include sizes(100%, 300px);
     margin-left: 1rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  
   .video-container {
     @include sizes(100%, 320px);
+  }
+
+  .imagenes-grid {
+    @include sizes(80%, 300px)
+  }
+
+  .interesting-title {
+    font-size: 1.5rem;
   }
 
   .img-carousel-bsas {
@@ -273,9 +331,16 @@ $estilos: (
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
   .video-container {
     @include sizes(100%, 400px);
+  }
+
+  .imagenes-grid {
+    @include sizes(80%, 200px)
+  }
+
+  .interesting-title {
+    font-size: 1.2rem;
   }
 
   .img-carousel-bsas {
@@ -294,14 +359,21 @@ $estilos: (
     @include sizes(100%, 460px);
     margin-left: 1rem;
   }
-
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
   .video-container {
     @include sizes(100%, 500px);
   }
+
+  .imagenes-grid {
+    @include sizes(80%, 270px)
+  }
+
+  .interesting-title {
+    font-size: 1.5rem;
+  }
+
 
   .img-carousel-bsas {
     @include sizes(100%, 550px);
@@ -318,9 +390,12 @@ $estilos: (
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  
   .video-container {
     @include sizes(100%, 600px);
+  }
+
+  .imagenes-grid {
+    @include sizes(80%, 300px)
   }
 
   .img-carousel-bariloche {
