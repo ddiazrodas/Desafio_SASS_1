@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 .video-container {
   width: 100%;
@@ -51,6 +51,13 @@
 .imagenes-grid {
   width: 80%;
   height: 300px;
+}
+
+.imagenes-grid:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 6px 16px #006eff;
+          box-shadow: 0 6px 16px #006eff;
 }
 
 .interesting-title {
@@ -110,7 +117,7 @@
 }
 
 .tfuente {
-  font-family: 'Encode Sans', sans-serif, 'Calibri';
+  font-family: "Encode Sans", sans-serif, "Calibri";
   font-weight: 600;
   font-size: 56.25px;
   color: white;
@@ -119,7 +126,7 @@
 }
 
 .tfuente2 {
-  font-family: 'Poiret One', cursive, sans-serif, 'Calibri';
+  font-family: "Poiret One", cursive, sans-serif, "Calibri";
   font-weight: bold;
   color: white;
   -webkit-filter: drop-shadow(0 0 0.05rem black);
@@ -156,8 +163,14 @@
   border-radius: 40px;
 }
 
+.img-fondo-covid {
+  background-image: url("https://images.unsplash.com/photo-1610703415552-d7fca41a8857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+  background-size: cover;
+  height: 600px;
+}
+
 .tamaño-letra {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .img-links-covid {
@@ -165,6 +178,31 @@
   display: -ms-flexbox;
   display: flex;
   height: 300px;
+}
+
+.link-covid {
+  color: blue;
+}
+
+.link-covid:visited {
+  color: red;
+}
+
+.fuenteEncode {
+  font-family: "Encode Sans", sans-serif, "Calibri";
+  font-weight: 400;
+}
+
+.fuentePoiret {
+  font-family: "Poiret One", cursive, sans-serif, "Calibri";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.example-top {
+  -webkit-filter: drop-shadow(0 0 1rem black);
+          filter: drop-shadow(0 0 1rem black);
 }
 
 .img-carousel-bariloche {
@@ -175,7 +213,7 @@
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 25px;
   color: #737373;
 }

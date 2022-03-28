@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
 $estilos: (
-  tamanoFuente: 15px,
+  tamanoFuente: 18px,
   entreLineado: 25px,
   //boostrap ya en si me permitió cambiar el tamaño de fuente de las letras, y el centrado, etc.
 );
@@ -58,13 +58,12 @@ $estilos: (
 .imagenes-grid {
   @include sizes(80%, 300px);
   // display: flex;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 16px rgb(0, 110, 255);
+    // display: none;
+  }
 }
-
-// .imagenes-grid:hover {
-//   transform: scale(1.1);
-//   box-shadow: 0 6px 16px rgb(0, 110, 255);
-//   // display: none;
-// }
 
 .interesting-title {
   color: rgb(6, 255, 139);
@@ -109,36 +108,18 @@ $estilos: (
   box-sizing: border-box;
 }
 
-// .prueba {
-//   //esta es una clase para una animacion que estoy intentando hacer
-//   position: absolute;
-//   top: 10px;
-//   left: 10px;
-//   text-align: center;
-
-//   &:hover {
-//     display: none;
-//     position: absolute;
-//   }
-// }
-
-// .imagenes-grid:hover + .prueba {
-//   //esta es una clase para una animacion que estoy intentando hacer
-//   display: none;
-// }
-
 .tfuente {
-  font-family: 'Encode Sans', sans-serif, 'Calibri';
+  font-family: "Encode Sans", sans-serif, "Calibri";
   font-weight: 600;
-  font-size: 56.25px;  
+  font-size: 56.25px;
   color: white;
   filter: drop-shadow(0 0 0.05rem rgb(0, 0, 0));
 }
 
 .tfuente2 {
-  font-family: 'Poiret One', cursive, sans-serif, 'Calibri';
+  font-family: "Poiret One", cursive, sans-serif, "Calibri";
   font-weight: bold;
-  // line-height: map-get($estilos, entreLineado);  
+  // line-height: map-get($estilos, entreLineado);
   color: white;
   filter: drop-shadow(0 0 0.05rem rgb(0, 0, 0));
 }
@@ -178,6 +159,11 @@ $estilos: (
 
 //--------------------------------------------Covid------------------------------------
 
+.img-fondo-covid {
+  background-image: url("https://images.unsplash.com/photo-1610703415552-d7fca41a8857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+  background-size: cover;
+  height: 600px;
+}
 .tamaño-letra {
   font-size: map-get(
     $estilos,
@@ -190,7 +176,31 @@ $estilos: (
   height: 300px;
 }
 
+.link-covid {
+  color: blue;
+
+  &:visited {
+    color: red;
+  }
+}
+
 //--------------------------------------------Top------------------------------------
+
+.fuenteEncode {
+  font-family: "Encode Sans", sans-serif, "Calibri";
+  font-weight: 400;
+}
+
+.fuentePoiret {
+  font-family: "Poiret One", cursive, sans-serif, "Calibri";
+  font-weight: bold;
+  font-size: map-get($estilos, tamanoFuente);
+  line-height: map-get($estilos, entreLineado);
+}
+
+.example-top {
+  filter: drop-shadow(0 0 1rem black);
+}
 
 .img-carousel-bariloche {
   @include sizes(100%, 350px);
@@ -272,7 +282,7 @@ $estilos: (
   }
 
   .tfuente {
-    font-size: 20px;  
+    font-size: 20px;
   }
 
   .img-carousel-bsas {
@@ -306,7 +316,7 @@ $estilos: (
   }
 
   .tfuente {
-    font-size: 29px;  
+    font-size: 29px;
   }
 
   .img-carousel-bsas {
@@ -341,7 +351,7 @@ $estilos: (
   }
 
   .tfuente {
-    font-size: 35px;  
+    font-size: 35px;
   }
 
   .img-carousel-bsas {
@@ -376,7 +386,7 @@ $estilos: (
   }
 
   .tfuente {
-    font-size: 45px;  
+    font-size: 45px;
   }
 
   .img-carousel-bsas {
@@ -398,7 +408,6 @@ $estilos: (
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
   .video-container {
     @include sizes(100%, 500px);
   }
@@ -412,7 +421,7 @@ $estilos: (
   }
 
   .tfuente {
-    font-size: 52.25px;  
+    font-size: 52.25px;
   }
 
   .img-carousel-bsas {
